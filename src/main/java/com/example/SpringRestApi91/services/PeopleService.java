@@ -26,6 +26,7 @@ public class PeopleService {
 
     public Person findOne(int id) {
         Optional<Person> person = peopleRepository.findById(id);
+
         return person.orElse(null);
     }
 
